@@ -8,6 +8,8 @@ if ! command -v flyctl >/dev/null 2>&1; then
 fi
 
 if [ -z "$APP_NAME" ]; then
+    printf "$APP_NAME"
+    printf "${APP_NAME}"
     printf '$APP_NAME'
     printf '${APP_NAME}'
     printf '\e[31m错误：未指定APP名称。\n\e[0m' && exit 1
