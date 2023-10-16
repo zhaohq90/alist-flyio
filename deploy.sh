@@ -7,7 +7,7 @@ if ! command -v flyctl >/dev/null 2>&1; then
     curl -L https://fly.io/install.sh | FLYCTL_INSTALL=/usr/local sh
 fi
 
-if [ -z "${APP_NAME}" ]; then
+if [ -z "$APP_NAME" ]; then
     printf '\e[31m错误：未指定APP名称。\n\e[0m' && exit 1
 fi
 
