@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 env:
   FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
-  APP_NAME: ${{ secrets.APP_NAME }}
+  APP_NAME: 'april-alist'
   SQLUSER: ${{ secrets.SQLUSER }}
   DATABASE: ${{ secrets.DATABASE }}
   SQLPASSWORD: ${{ secrets.SQLPASSWORD }}
